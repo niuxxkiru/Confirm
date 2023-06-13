@@ -23,10 +23,68 @@
     background-color: #ffff;
     padding: 0.6em 2em;
     box-shadow: 0px 5px 10px rgba(120, 228, 247, 0.5);
+    margin: 1em;
 }
 
 .container .sub-container .content{
-    background-color: aquamarine;
     display: flex;
     gap: .6em;
+    align-items: center;
+    margin-bottom: 1.2em;
+    flex-direction: column;
+}
+
+.container .sub-container .content .icon{
+    margin-right: .6em;
+}
+
+.container .sub-container .content .message h3{
+    font-weight: bolder;
+}
+
+.container .sub-container .actions{
+    padding: .6em;
+    display: flex;
+    gap: 1em;
+    justify-content: end;
+    
+}
+
+.container .sub-container .actions button{
+    border: none;
+    border-radius: 1.5em;
+    padding: .7em;
+    cursor: pointer;
+    min-width: 120px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.container .sub-container .actions .btn-download{
+    background-color: #568bd4;
+    color: #ffff;
+}
+
+.container .sub-container .actions .btn-download:hover{
+    background-color: #376bb4;
+}
+
+.container .sub-container .actions .btn-back{
+    background-color: #ffff;
+    border: solid 1px #ccc;
+}
+
+.container .sub-container .actions .btn-back:hover{
+    background-color: #eee;
+}
+
+@media (max-width:600px) {
+    .container .sub-container{
+        width:90%;
+    }
+
+    .container .sub-container .actions{
+        flex-direction: column;
+    }
+
 }
