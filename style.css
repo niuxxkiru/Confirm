@@ -34,8 +34,8 @@
     flex-direction: column;
 }
 
-.container .sub-container .content .icon{
-    margin-right: .6em;
+.container .sub-container .content .icon img{
+    height: 12em;
 }
 
 .container .sub-container .content .message h3{
